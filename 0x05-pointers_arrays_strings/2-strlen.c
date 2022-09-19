@@ -1,21 +1,18 @@
 #include "main.h"
 
 /**
- * _strlen - this function change the initial.
+ * _strlen - returns the length of a string
  *
- * @s: this is a parameter to change.
+ * @s: string
  *
- * Return: len
+ * Return: returns length as integer;
  *
  */
 
 int _strlen(char *s)
 {
-int len;
-while (*s != '\0')
-{
-len = len + 1;
-s = s + 1;
-}
+int len = 0;
+while (*(s + len)  != '\0')
+len++;
 return (len);
 }
