@@ -1,19 +1,21 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - check the code for My first strlen.
+ * _strlen - this function change the initial.
  *
- * Return: Always 0.
+ * @s: this is a parameter to change.
+ *
+ * Return: len
  *
  */
 
-int main(void)
+int _strlen(char *s)
 {
-char *str;
 int len;
-str = "My first strlen!";
-len = _strlen(str);
-printf("%d\n", len);
-return (0);
+while (*s != '\0')
+{
+len = len + 1;
+s = s + 1;
+}
+return (len);
 }
